@@ -1,0 +1,64 @@
+
+/* 
+	STYLE.CSS:
+	One stylesheet to rule them all.
+	
+	selector { property:value }
+	
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
+
+body {
+  background-color: #63483A;
+}
+ 
+.pageContainer {
+  width: 940px;
+  margin: 40px auto 0 auto;
+  padding: 40px;
+  background-color: #375923;
+}
+ 
+.imageContainer {
+  float: left;
+  width: 620px;
+}
+ 
+.textContainer {
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+ 
+h1 {
+  font-family: 'Brush Script MS', cursive;
+  font-size: 100px;
+  color: #B7DCA1;
+}
+ 
+p, li {
+  font-family: 'Optima', sans-serif;
+  font-size: 22px;
+  color: #B7DCA1;
+}
+
+
+
+
+/* ---- Advanced ---- */
+/* This tag is a bit advanced for this lesson,  
+   but is needed to wrap the pageContainer 
+   around any sized content that is floated within it. */
+
+.pageContainer:after { 
+  content: " ";
+  display: table;
+  clear: both;
+}
+ 
